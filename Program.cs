@@ -1,4 +1,4 @@
-﻿using FastFileDownloader;
+using FastFileDownloader;
 using System.Net.Http;
 using System.Net.Http.Headers;
 

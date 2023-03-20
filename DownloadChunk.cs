@@ -9,9 +9,12 @@ namespace FastFileDownloader;
 
 
     internal struct DownloadChunk
-    {
-        public long End;
-        public long Start;
-        public long Size => End - Start;
+{
+    //stores the info for End
+    public long End;
+    //stores the info for End
+    public long Start;
+    //Creates and stores the size info, being the end minus the start
+    public long Size => End - Start;
     }
 

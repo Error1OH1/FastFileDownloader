@@ -36,12 +36,12 @@ internal class Program
             InputVerification.ErrorMessage("Input is Invalid or Empty");
             UserHandler();
         }
-        if (!IsUrl(url))
+        if (Uri.IsWellFormedUriString(url, UriKind.Absolute) != true)
         {
             InputVerification.ErrorMessage("Input is Invalid or Empty");
             UserHandler();
         }
-        
+
         else
         {
             Console.Clear();
@@ -49,11 +49,11 @@ internal class Program
             Console.Write(">");
             string filename = Console.ReadLine();
             Console.Clear();
-            
+
             Console.WriteLine("What type of file is this?");
             string filetype = Console.ReadLine();
             Console.Clear();
-            
+
             if (filetype.Contains("."))
             {
                 Console.Clear();
